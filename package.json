@@ -1,0 +1,25 @@
+{
+  "name": "ncrtc-twin",
+  "version": "0.4.0",
+  "private": true,
+  "description": "NCRTC digital twin: sensors -> MQTT -> Kafka -> TimescaleDB + Redis",
+  "scripts": {
+    "publish": "node --env-file=.env src/publisher.js",
+    "subscribe": "node --env-file=.env src/subscriber.js",
+    "db:setup": "node --env-file=.env src/db-setup.js",
+    "kafka:setup": "node --env-file=.env src/kafka-setup.js",
+    "bridge": "node --env-file=.env src/bridge.js",
+    "consume:db": "node --env-file=.env src/consumer-db.js",
+    "consume:cache": "node --env-file=.env src/consumer-cache.js",
+    "adapter:chirpstack": "node --env-file=.env src/adapter-chirpstack.js",
+    "sim:chirpstack": "node --env-file=.env src/chirpstack-sim.js",
+    "status": "node --env-file=.env src/status.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.0",
+    "kafkajs": "^2.2.4",
+    "mqtt": "^5.10.0",
+    "pg": "^8.13.0"
+  }
+}

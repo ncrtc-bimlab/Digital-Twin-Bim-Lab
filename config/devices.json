@@ -1,0 +1,4 @@
+{
+  "_comment": "DevEUI (lowercase, 16 hex chars) -> where this sensor lives. Example entry is for the simulator. Delete it when you add real devices. Unlisted devices still work but are filed under UNMAPPED.",
+  "0102030405060708": { "sensor_id": "LW001", "station": "ANAV", "zone": "P123" }
+}
