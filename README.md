@@ -65,7 +65,7 @@ docker exec -it twin-db psql -U twin -d twin -c "select version();"
 ```bash
 docker compose down          # stop, keep data
 docker compose down -v       # stop and DELETE all data
+claude : https://claude.ai/share/0d1720f7-425d-4fd8-8c17-9dec1c17a8d3
 ```
 # nitin-test-dt
-https://claude.ai/share/0d1720f7-425d-4fd8-8c17-9dec1c17a8d3
 # nitin-test-dt
